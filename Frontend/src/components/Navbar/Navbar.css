@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 30px;
+  height: auto;
+}
+
+.navbar-logo span {
+  font-size: 1.5rem;
+  margin-left: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-family:'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  list-style-type: none;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.auth-button {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.signup-btn {
+  padding: 8px 16px;
+  background-color: white;
+  color: #000;
+  border-radius: 20px;
+  border: 1px solid #000;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.signup-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.navbar-link-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.navbar-link-button:hover {
+  text-decoration: underline;
+}
