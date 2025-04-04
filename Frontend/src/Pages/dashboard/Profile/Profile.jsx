@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./profile.css";
+import "./Profile.css";
 import { auth, db } from "../../../utils/firebase.js";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { doc, updateDoc } from "firebase/firestore";
@@ -15,13 +15,12 @@ const Profile = () => {
     address: "",
     isAdmin: "false",
   });
-  const [isEditing, setIsEditing] = useState(false);// to toggle
-
+  const [isEditing, setIsEditing] = useState(false); // to toggle
 
   useEffect(() => {
     // fetch formData with profileData when it changes
     if (profileData) {
-      console.log(profileData)
+      console.log(profileData);
       setFormData({
         username: profileData.Name || "",
         email: profileData.Email || "",
@@ -82,7 +81,7 @@ const Profile = () => {
           <div className="profileInfo">
             <div className="profileAvatar">
               <div className="avatarPlaceholder">
-                {profileData.Name ? profileData.Name[0]: "U"}
+                {profileData.Name ? profileData.Name[0] : "U"}
               </div>
             </div>
             <div className="profileDetails">
@@ -90,7 +89,12 @@ const Profile = () => {
               <p>Email: {profileData.Email || "No email"}</p>
               <p>Phone: {profileData.phone || "No phone"}</p>
               <p>Address: {profileData.address || "No address"}</p>
-              <p>Account Type: {profileData.isAdmin === "true" ? "Administrator" : "Regular User"}</p>
+              <p>
+                Account Type:{" "}
+                {profileData.isAdmin === "true"
+                  ? "Administrator"
+                  : "Regular User"}
+              </p>
               <p>Account created on: Jan 15, 2025</p>
               {!isEditing && (
                 <button
