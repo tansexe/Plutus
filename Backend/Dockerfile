@@ -1,5 +1,5 @@
 # Use a Python image with build tools
-FROM python:3.10-slim
+FROM python:3.10.14-slim
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
