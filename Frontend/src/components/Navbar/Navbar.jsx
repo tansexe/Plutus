@@ -35,14 +35,24 @@ const Navbar = () => {
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li>
-          <Link to="/">About</Link>
-        </li>
+        <a
+          href="https://github.com/tansexe/Plutus/tree/main"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
         <li>
           <Link to="/payment">Payments</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <a
+            href="https://www.linkedin.com/in/tansexe/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contact
+          </a>
         </li>
       </ul>
       <div className="auth-button">

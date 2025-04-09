@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 
 const Home = () => {
@@ -10,8 +11,16 @@ const Home = () => {
         <div className="hero-content">
           <h1>Explore banking that fits your dreams</h1>
           <div className="hero-buttons">
-            <button className="hero-btn services-btn">Services</button>
-            <button className="hero-btn contact-btn">Contact Us</button>
+            <Link to="/payment">
+              <button className="hero-btn services-btn">Payment</button>
+            </Link>
+            <a
+              href="https://www.linkedin.com/in/tansexe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="hero-btn contact-btn">Contact Me</button>
+            </a>
           </div>
         </div>
       </div>

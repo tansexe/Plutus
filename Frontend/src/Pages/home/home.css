@@ -57,9 +57,9 @@
 }
 
 .contact-btn {
-  background-color: #4c85f0;
+  background-color: transparent;
+  border: 1px solid white;
   color: white;
-  border: none;
 }
 
 .cards-container {
@@ -68,6 +68,8 @@
   margin: 60px auto;
   max-width: 1200px;
   padding: 0 20px;
+  border-radius: 1px;
+  border-color: #f0f0f0;
 }
 
 .card {
